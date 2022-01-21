@@ -77,4 +77,9 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Users is empty !");
     }
 
+    @PutMapping(path = "/deleteByName")
+    public ResponseEntity<?> deleteByName(){
+        return ResponseEntity.status(HttpStatus.OK).body("Deleted Successfully ! ");
+    }
+
 }
